@@ -5,3 +5,6 @@ This is a python program developed on the second half of the first year of compu
 My group and I have chosen to develop a program that helps people who has intesrested on learning more about recycling, providing them information about which material can be recycled as well as the closest place where they can take those materials. 
 
 Feel free to read and contribute with this code :D
+
+
+Disclaimer: Since this code was develop to be avaliated be professors at UNIP on Brazil, all the code and comentaries will be on Brazilian-Portugues.
