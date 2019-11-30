@@ -1,0 +1,81 @@
+{% extends "template.html" %}
+    {% block tipo %}
+    <div class="content-section">
+        <!--FORMULARIO PARA O TIPO DE MATERIAL-->
+        <form method="POST" action="">
+            {{ form_tipo.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Descobra o tipo do material</legend>
+                <div class="form-group">
+                    {{ form_tipo.material.label(class="form-control-label") }} <span style="color:red">*</span>
+                    {% if form_tipo.material.errors %}
+                        {{ form_tipo.material(class="form-control form-control-lg is-invalid") }} <span style="color:red">*</span>
+                        <div class="invalid-feedback">
+                            {% for error in form_tipo.material.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form_tipo.material(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form_tipo.submit(class="btn btn-outline-info") }}
+            </div>
+        </form><!--FORMULARIO PARA O TIPO DE MATERIAL-->
+    </div>
+    {% endblock tipo %}
+    {% block local %}
+    <div class="content-section">
+        <!--FORMULARIO PARA O LUGAR MAIS PROXIMO-->
+        <form method="POST" action="">
+            {{ form_lugar.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Descobra o local para levar o material</legend>
+                <div class="form-group">
+                    {{ form_lugar.material_descartado.label(class="form-control-label") }} <span style="color:red">*</span>
+                    {% if form_lugar.material_descartado.errors %}
+                        {{ form_lugar.material_descartado(class="form-control form-control-lg is-invalid") }} <span style="color:red">*</span>
+                        <div class="invalid-feedback">
+                            {% for error in form_lugar.material_descartado.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form_lugar.material_descartado(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                        {{ form_lugar.coordenadas_x.label(class="form-control-label") }} <span style="color:red">*</span>
+                        {% if form_lugar.coordenadas_x.errors %}
+                            {{ form_lugar.coordenadas_x(class="form-control form-control-lg is-invalid") }} <span style="color:red">*</span>
+                            <div class="invalid-feedback">
+                                {% for error in form_lugar.coordenadas_x.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form_lugar.coordenadas_x(class="form-control form-control-lg") }}
+                        {% endif %}
+                </div>
+                <div class="form-group">
+                        {{ form_lugar.coordenadas_y.label(class="form-control-label") }} <span style="color:red">*</span>
+                        {% if form_lugar.coordenadas_y.errors %}
+                            {{ form_lugar.coordenadas_y(class="form-control form-control-lg is-invalid") }} <span style="color:red">*</span>
+                            <div class="invalid-feedback">
+                                {% for error in form_lugar.coordenadas_y.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form_lugar.coordenadas_y(class="form-control form-control-lg") }}
+                        {% endif %}
+                </div>  
+            </fieldset>
+            <div class="form-group">
+                {{ form_lugar.submit(class="btn btn-outline-info") }}
+            </div>
+        </form><!--FORMULARIO PARA O LUGAR MAIS PROXIMO-->
+    </div>
+    {% endblock local %}
