@@ -7,7 +7,7 @@ My group and I have chosen to develop a program that helps people who has intere
 Feel free to read and contribute with this code :D
 
 
-Disclaimer: Since this code was develop to be avaliated be professors at UNIP on Brazil, all the code and comentaries will be on Brazilian-Portugues.
+Disclaimer: Since this code was develop to by avaliated be professors at UNIP on Brazil, all the code and comentaries will be on Brazilian-Portugues.
 
 Olá,
 
