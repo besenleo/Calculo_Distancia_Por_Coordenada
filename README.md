@@ -1,4 +1,4 @@
-# APS-Python-2sem
+# Calculo_Distancia_Por_Coordenada
 
 This is a python program developed on the second half of the first year of computer science at UNIP. Its main goal is to develop a python program which will help on some part of waste recycling process.
 
